@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 10 Coding Assignment</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mt-3">Books Completed Entry Form</h1>
+
+      <!-- Form HTML and styling-->
+      <form class="row g-3">
+        <div class="col-md-4">
+          <label for="bookTitle" class="form-label">Book Title</label>
+          <input
+            type="text"
+            class="form-control"
+            id="bookTitle"
+            placeholder="Book Title"
+          />
+        </div>
+        <div class="col-md-4">
+          <label for="bookAuthor" class="form-label">Book Author</label>
+          <input
+            type="text"
+            class="form-control"
+            id="bookAuthor"
+            placeholder="Book Author"
+          />
+        </div>
+        <div class="col-md-4">
+          <label for="isbn" class="form-label">ISBN</label>
+          <input
+            type="number"
+            class="form-control"
+            id="isbn"
+            placeholder="ISBN"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="dateStart" class="form-label">Reading Start Date</label>
+          <input type="date" class="form-control" id="dateStart" />
+        </div>
+        <div class="col-md-6">
+          <label for="dateFinish" class="form-label">Reading Finish Date</label>
+          <input type="date" class="form-control" id="dateFinish" />
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div class="container">
+      <!-- Table HTML and styling-->
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Book Title</th>
+            <th>Book Author</th>
+            <th>ISBN</th>
+            <th>Start Date</th>
+            <th>Finish Date</th>
+            <th></th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+
+    <style>
+      table {
+        margin-top: 20px;
+      }
+
+      th,
+      td {
+        text-align: center;
+      }
+    </style>
+    <script src="./codingAssignment.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
